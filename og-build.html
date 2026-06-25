@@ -2,71 +2,41 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8" />
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700;800;900&display=swap" rel="stylesheet" />
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{width:1200px;height:630px;overflow:hidden}
   body{
     font-family:'Heebo',sans-serif;
     background:
-      radial-gradient(110% 120% at 88% 8%, rgba(143,166,142,.38), transparent 52%),
-      radial-gradient(80% 90% at 6% 100%, rgba(143,166,142,.18), transparent 55%),
+      radial-gradient(115% 130% at 85% 5%, rgba(143,166,142,.40), transparent 50%),
+      radial-gradient(85% 95% at 8% 100%, rgba(143,166,142,.20), transparent 55%),
       linear-gradient(180deg,#FFFFFF 0%, #FAF8F3 100%);
     position:relative;
   }
-  /* dotted flight route */
   .route{position:absolute;inset:0;z-index:0}
-  .plane{position:absolute;top:96px;left:120px;font-size:46px;transform:rotate(-18deg);filter:drop-shadow(0 6px 10px rgba(44,49,58,.18))}
-  .wrap{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:62px 70px}
-
-  .top{display:flex;align-items:center;justify-content:space-between}
-  .logo{height:118px;width:auto;display:block}
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:10px;
-    background:#E7EDE6;color:#5d7460;font-weight:700;font-size:24px;
-    padding:12px 24px;border-radius:999px;
+  .plane{position:absolute;top:118px;left:150px;font-size:54px;transform:rotate(-18deg);filter:drop-shadow(0 6px 12px rgba(44,49,58,.18))}
+  .wrap{
+    position:relative;z-index:2;height:100%;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:60px 80px;gap:40px;
   }
-
-  .mid{max-width:1060px}
+  .logo{height:188px;width:auto;display:block}
   h1{
-    font-size:76px;line-height:1.12;font-weight:900;letter-spacing:-1.5px;color:#2C313A;white-space:nowrap;
+    font-size:80px;line-height:1.14;font-weight:900;letter-spacing:-1.8px;color:#2C313A;white-space:nowrap;
   }
   h1 .hl{color:#6E8770}
-  .sub{margin-top:22px;font-size:30px;font-weight:500;color:#525965}
-  .sub b{color:#2C313A;font-weight:700}
-
-  .bottom{display:flex;align-items:center;gap:26px}
-  .pill{
-    display:inline-flex;align-items:center;gap:12px;
-    background:#2C313A;color:#fff;font-weight:700;font-size:26px;
-    padding:15px 30px;border-radius:14px;
-  }
-  .pill.wa{background:#25D366}
-  .by{font-size:24px;color:#525965;font-weight:600}
-  .by b{color:#2C313A}
 </style>
 </head>
 <body>
   <svg class="route" viewBox="0 0 1200 630" preserveAspectRatio="none">
-    <path d="M120 120 C 380 40, 760 70, 1120 200" fill="none" stroke="#8FA68E" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round" opacity="0.55"/>
+    <path d="M150 140 C 430 50, 780 80, 1110 230" fill="none" stroke="#8FA68E" stroke-width="3" stroke-dasharray="2 15" stroke-linecap="round" opacity="0.5"/>
   </svg>
   <div class="plane">✈️</div>
 
   <div class="wrap">
-    <div class="top">
-      <img class="logo" src="assets/logo.png" alt="ורד וילדר" />
-      <span class="eyebrow">ביטוח נסיעות לחו״ל</span>
-    </div>
-
-    <div class="mid">
-      <h1>טסים לחו״ל? בואו נתאים<br><span class="hl">ביטוח שבאמת מכסה אתכם.</span></h1>
-      <p class="sub">התאמה אישית למצב הרפואי, ליעד ולחופשה — <b>אותו מחיר, ערך אחר לגמרי.</b></p>
-    </div>
-
-    <div class="bottom">
-      <span class="pill wa">שלחו לי הודעה</span>
-      <span class="by">ורד וילדר · <b>סוכנת ביטוח</b> · 054-7107414</span>
-    </div>
+    <img class="logo" src="assets/logo.png" alt="ורד וילדר" />
+    <h1>טסים לחו״ל?<br><span class="hl">ביטוח נסיעות שמתאים בדיוק לכם.</span></h1>
   </div>
 </body>
 </html>
